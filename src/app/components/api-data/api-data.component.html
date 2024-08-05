@@ -1,0 +1,9 @@
+<h1 class="title">API Data</h1>
+<div *ngIf="data">
+  <div class="card-container">
+    <div class="card">
+      <h2>{{ data.fact | json }}</h2>
+    </div>
+  </div>
+</div>
+<button class="btn_fetch" (click)="fetchData()">Fetch Data</button>
